@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+        1.사용자에게 바구니의 크기를 입력 받습니다
+        2. 그 다음에 사과의 개수를 입력 받습니다
+        3. 사과의 개수와 필요한 바구니의 개수를 출력해주면 됩니다
+        */
+        let a=parseInt(prompt('바구니의 크기'));
+        let apple=parseInt(prompt('사과의 개수'));
+        let b=apple/a;
+        let c=(apple-(apple%a))/a+1;   //parseInt(b)+1 이 더 간단!!
+        console.log(apple%a==0?("필요한 바구니 개수는 "+b+"개 입니다") :("필요한 바구니의 개수는 "+c+" 입니다"));
+
+    </script>
+</body>
+</html>

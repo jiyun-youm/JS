@@ -33,6 +33,6 @@ console.log("result 의 값:", result);
 // const: ES6에서 추가된 키워드, 상수(변하지 않는 값)
 // 상수는 반드시 값을 선언해야 함
 const EARTH_RADIUS=6400;  
-EARTH_RADIUS=7000;
+// EARTH_RADIUS=7000;  한번 선언되면 값 변경 불가함
 
 console.log(EARTH_RADIUS);
