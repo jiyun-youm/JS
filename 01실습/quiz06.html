@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 1월~12월까지 월수를 입력받습니다
+     3~5월은 봄
+     6~8월은 여름
+     9~11월은 가을
+     12~2월은 겨울
+     입력받은 월 수와 해당 계절을 switch 구문을 통해 출력해주세요
+     -->
+     <script>
+        let month=parseInt(prompt("몇 월인가요?"))
+        switch (parseInt(month/3)) {
+            case 1:
+                document.write(month,"월은 봄입니다")
+                break;
+            case 2:
+                document.write(month,"월은 여름입니다")
+                break;
+            case 3:
+                document.write(month,"월은 가을입니다")
+                break;
+            default:
+                if (month==12 ||1||2) {
+                    document.write(month,"월은 겨울입니다")
+                } else{
+                document.write(month,"1에서 12 사이의 숫자를 입력하세요")
+                }
+                break;
+        }
+     </script>
+</body>
+</html>
