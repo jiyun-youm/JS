@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    사용자에게 먹고 싶은 음식을 입력 받습니다
+    입력받은 음식을 []에 저장
+    그만을 입력하면, 반목문을 종료하고 입력받은 배열을 출력해주세요
+    -->
+    <script>
+        let arr1=[];
+        while(true){
+            let food=prompt('먹고 싶은 음식');
+            if (food=="그만") {
+                break;
+            }
+            arr1.push(food);
+        }
+        document.write(arr1);
+        
+
+
+    </script>
+</body>
+</html>

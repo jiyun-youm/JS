@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/* 
+어떤 수 x를 입력받아서, x 까지의 소 수들의 합계를 구합니다
+   
+*/
+let x=parseInt(prompt('숫자를 입력하시오'));
+let cnt=0;
+
+for(let i=1;i<=x;i++){
+    let a=0;
+    for(let j=1;j<=i;j++){
+        
+        if(i%j===0){
+            a+=1
+        }
+    }
+    if (a===2) {
+        cnt+=i
+    } 
+}
+document.write(`${x}까지의 소수의 합은 ${cnt}입니다`);
+
+
+
+    </script>
+</body>
+</html>
