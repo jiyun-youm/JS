@@ -30,3 +30,13 @@ if(arr.indexOf('a')!=-1){}  //배열에 a가 있다면
 
 if(arr.includes('a')){}    //a가 있으면 true, 없으면 false
 
+//배열의 병합(합치기)
+let arr4=[1,2,3]
+let arr3=[4,5,10]
+let result=arr3.concat(arr4)    
+
+
+//배열의 정렬-오름차순 정렬
+console.log(result);
+result.sort() 
+console.log(result);
