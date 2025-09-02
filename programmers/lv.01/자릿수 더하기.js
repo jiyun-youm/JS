@@ -23,5 +23,3 @@ return sum;
 }
 
 console.log(solution(1235));
-
-
