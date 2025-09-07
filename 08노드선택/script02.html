@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>css선택자 문법으로 엘리먼트 선택</h3>
+    <ul class="box">
+        <li>안녕하세요</li>
+        <li>안녕하세</li>
+        <li>안녕하</li>
+    </ul>
+
+    <script>
+        //최초로 발견되는 태그 1개 선택
+        let li=document.querySelector(".box>li")   //querySelector: 가장 처음에 발견되는 쿼리 1개만 가져옴
+        console.log(li);
+        let lis=document.querySelectorAll(".box>li")
+        console.log(lis);
+        
+        
+    </script>
+
+    <hr>
+
+    <h3>DOM탐색을 선택적으로 하는 방법</h3>
+    <div class="wrap">
+        <select class="sel">
+            <option>사과</option>
+            <option>딸기</option>
+            <option>멜론</option>
+        </select>
+    </div>
+
+    <script>
+        let wrap=document.querySelector(".wrap");    
+        let options=wrap.querySelectorAll(".sel>option")   //wrap 태그에서만 option 태그 재 탐색 //원래는 document.어쩌고 인데, 이러면 문서 전체에 있는 option 다 찾아버림
+        
+    </script>
+
+</body>
+</html>
