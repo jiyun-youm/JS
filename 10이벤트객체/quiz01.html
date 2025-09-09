@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        li, ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        li{
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <ul class="img">
+        <li><img src="img/1.jpg" alt="1" width="100"></li>
+        <li><img src="img/2.jpg" alt="2" width="100"></li>
+        <li><img src="img/3.jpg" alt="3" width="100"></li>
+        <li><img src="img/4.jpg" alt="4" width="100"></li>
+    </ul>
+
+    결과: (태그에 필요한 속성은 본인이 알아서 추가)
+    <div >
+        <img class="result" src="img/1.jpg" alt="결과" width="200">
+    </div>
+
+    <script>
+        let img=document.querySelector(".img");
+        let result=document.querySelector(".result");
+
+        img.onclick=function(e) {
+            if(e.target.tagName!=="IMG"){
+                return;
+            }
+            result.src="img/"+e.target.alt+".jpg"; 
+        
+            
+        };
+
+
+    </script>
+</body>
+</html>
